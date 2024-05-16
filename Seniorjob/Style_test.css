@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar: #716E6E;
+    --green: #A5A686;
+    --yellow: #ECC962;
+}
+
+body {
+    margin: 0;
+}
+h1 {
+    font-family: "Ubuntu Medium";
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: "Ubuntu Regular";
+    font-size: 3.5vw;
+    margin-left: 100px;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+
+}
+
+.navbar a {
+    color: var(--navbar);
+    padding: 14px 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: ubuntu;
+    font-size: 1.2vw;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    padding: 0 !important;
+    margin-top: 2px !important;
+}
+
+.logoimg {
+    width: 40%;
+    height: auto;
+    padding: 0 !important;
+}
+
+.navloginbtn {
+    width: 10%;
+    height: auto;
+}
+/*.navlogin {
+    background-color: var(--green);
+    border-radius: 25px;
+}*/
+
+/* OBS giver style til alle buttons */
+button {
+    background-color: var(--green);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.navloginimg {
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.modalimgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.modalavatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.modalcontainer {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.annoncører {
+    background-color: var(--yellow);
+    border-radius: 25px;
+    margin-left: 150px;
+}
+
+/* Column container */
+.herosection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.searchsection {
+    flex: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* searchbar
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button
+ */
+form.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+form.searchbar button {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    background: #838383;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchbar button:hover {
+    background: #5C5C5C;
+}
+
+form.searchbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    float: left;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* The container */
+.checkboxcontainer {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1.5vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-color: #000000;
+    border-style:solid;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxcontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxcontainer input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxcontainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Main column */
+.hero {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+}
+
+.heroimg {
+    width: 80%;
+}
+
+.undersection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.omsection {
+    flex: 60%;
+    background-color: #EFEEF4;
+    padding: 20px;
+}
+
+.header-sektion{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.speaker {
+    width: 25%;
+    height: auto;
+}
+
+.profilsection {
+    flex: 40%;
+    background-color: #E0DDD6;
+    padding: 20px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.profilloginimg {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logincontainer {
+    padding: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width
+: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

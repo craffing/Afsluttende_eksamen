@@ -1,0 +1,157 @@
+:root {
+    --navbar: #716E6E;
+    --green: #A5A686;
+    --yellow: #ECC962;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('font/ubuntu/ubuntu-regular.ttf');
+}
+
+h1 {
+    font-family: "Ubuntu Medium";
+    text-transform: uppercase;
+    font-size: 3.5vw;
+}
+
+.topnav a {
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: var(--navbar);
+    font-family: ubuntu;
+    margin-top: 20px;
+}
+
+.logoimg {
+    width: 40%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: var(--yellow);
+    border-radius: 25px;
+}
+
+.navlogin {
+    background-color: var(--green);
+    border-radius: 25px;
+}
+
+.navloginimg {
+    width: 8%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.hero {
+    display: block;
+    float: right;
+}
+
+.heroimg {
+    width: 50%;
+    height: auto;
+    margin-left: 650px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+.h3erfaring {
+    margin-left: 150px;
+}
+
+
+/* searchbar
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button
+ */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #838383;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #5C5C5C;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.avanceret {
+    margin-top: 20px;
+    margin-left: 62px;
+    border-color: white;
+}
+
+.avancerets {
+    margin-left: 62px;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}

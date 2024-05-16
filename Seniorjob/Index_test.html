@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Index_test</title>
+    <link rel="stylesheet" href="Style_test.css">
+    <script type="text/javascript" src="Checkbox-dropdown.js"></script>
+</head>
+<body>
+<!--kode til opdeling af siden:
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2-->
+<header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a class="logo" href="index.html">
+            <img class="logoimg" src="img/slogo.png" alt="logo"></a>
+        <a href="#">Aktuelle stillinger</a>
+        <a href="#">Jobprofil</a>
+        <a href="#">Til jobsøgere</a>
+        <a href="#">Om Seniorjob</a>
+        <!--<a class="navlogin" href="#">Login<img class="navloginimg" src="img/profil%202.png"></a>-->
+
+        <!-- kode til popup loginfelt:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal-->
+
+        <button class="navloginbtn" onclick="document.getElementById('id01').style.display='block'" >Login<img class="navloginimg" src="img/profil%202.png"></button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="modalimgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="img/profil%202.png" alt="Avatar" class="modalavatar">
+                </div>
+                <div class="modalcontainer">
+                    <label for="uname"><b>E-mail-adresse</b></label>
+                    <input type="text" placeholder="Indtast e-mail-adresse" name="uname" required>
+
+                    <label for="psw"><b>Adgangskode</b></label>
+                    <input type="password" placeholder="Indtast adgangskode" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="modalcontainer">
+                    <button type="modalbutton" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+        <a class="annoncører" href="#">Til annoncører</a>
+    </nav>
+</header>
+<hr>
+<!-- The flexible grid (content) -->
+<section class="herosection">
+        <div class="searchsection">
+            <h1>find dit nye <span style="color: var(--yellow)">seniorjob</span></h1>
+            <!-- kode til søgefelt:
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button -->
+            <form class="searchbar" action="/action_page.php" style="margin:auto;max-width:600px">
+                <input type="text" placeholder="Søg efter stilling, virksomhed m.m." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <!-- kode til accordion:
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion -->
+            <button class="accordion" style="margin:auto;max-width:600px">Udvidet søgning</button>
+            <!-- kode til checkbox:
+            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox -->
+            <div class="panel">
+                <label class="checkboxcontainer">Region Hovedstaden
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxcontainer">Region Midtjylland
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxcontainer">Region Nordjylland
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxcontainer">Region Sjælland
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxcontainer">Region Syddanmark
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxcontainer">Grønland
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkboxcontainer">Færøerne
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="hero">
+            <img class="heroimg" src="img/index%20hero%20kvadrat.png" alt="heroillustration"/>
+    </div>
+</section>
+<hr>
+<section class="undersection">
+        <div class="omsection">
+           <div class="header-sektion">
+               <img class="speaker" src="img/speaker.png"/>
+            <h2>Om Seniorjob</h2>
+           </div>
+            <p>SeniorJob er den aktuelle oversigt over
+                ledige stillinger, som passer til et aktivt pensionistliv.
+                <br>
+                <br>
+                Her finder du stillinger på nedsat tid. Både faste stillinger, midlertidige jobs og tilkaldevagter.
+                <br>
+                <br>
+                SeniorJob er en del af SeniorKlar, som blandt andet skal forberede seniorer til en gradvis tilbagetrækning fra arbejdsmarkedet.
+                <br>
+                <br>
+                Er du arbejdsgiver, får du her en helt unik mulighed for at nå ud til Faglige Seniorers 250.000 medlemmer med dine jobopslag.</p>
+        </div>
+        <div class="profilsection">
+            <form action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <img class="profilloginimg" src="img/profil%202.png">
+                </div>
+                <div class="logincontainer">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="logincontainer">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+                    </div>
+</section>
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+
+</body>
+</html>

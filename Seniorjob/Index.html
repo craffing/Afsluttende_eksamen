@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seniorjob</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <nav class="topnav">
+        <ul>
+            <li><a class="logo" href="index.html">
+            <img class="logoimg" src="img/slogo.png" alt="logo"></a></li>
+        <li><a href="aktuelle stillinger">Aktuelle stillinger</a></li>
+        <li><a href="Jobprofil">Jobprofil</a></li>
+        <li><a href="Til jobsøgere">Til jobsøgere</a></li>
+        <li><a href="Om Seniorjob">Om Seniorjob</a></li>
+        <li><a class="navlogin" href="Login">Login<img class="navloginimg" src="img/profil%202.png"</a></li>
+        <li style="float:right"><a class="active" href="Til annoncører">Til annoncører</a></ul></li>
+        <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right-->
+        <hr>
+
+        <!--<div class="navlinks">
+            <div class="dropdown">
+                <button class="dropbtn">Portfolio</button>
+                <div class="dropdown-content">
+                    <a href="brugerrejse.html">Brugerrejse - Balletbørnene</a>
+                    <a href="some.html">SoMe - NemSkat</a>
+                    <a href="app.html">App - NemSkat</a>
+                    <!--<a href="artwork.html">Artwork</a>-->
+                <!--</div>
+                <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar-->
+            <!--</div>
+            <a href="ommig.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>-->
+    </nav>
+</header>
+<section class="hero">
+    <img class="heroimg" src="img/index%20hero%20senior.png" alt="heroillustration">
+    <div class="hero-text">
+    <h1>find dit nye <span style="color: var(--yellow)">seniorjob</span></h1>
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:600px">
+        <input type="text" placeholder="Søg efter stilling, virksomhed m.m." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+        <button class="avanceret" onclick="myFunction()">Avanceret Søgning</button>
+        <div class="avancerets" id="advancedSearch" style="display: none;">
+            <input type="text" id="myInput" placeholder="Søg efter ord..">
+            <!-- Tilføj flere inputfelter efter behov -->
+        </div>
+    </div>
+    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button-->
+    <hr>
+</section>
+
+<section>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div><br>
+            <div class="fakeimg" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+
+</section>
+<script>
+    function myFunction() {
+        var x = document.getElementById("advancedSearch");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
